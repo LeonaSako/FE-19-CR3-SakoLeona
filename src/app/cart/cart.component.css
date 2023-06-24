@@ -1,0 +1,41 @@
+    .CartDescription {
+        padding-right: 45px;
+        max-height: 20px;
+    }
+    
+    .CartPrice {
+        font-weight: bold;
+        font-size: medium;
+    }
+    
+    .card-body {
+        justify-content: space-between;
+    }
+    
+    .Sum {
+        border: solid 1px black;
+        max-width: 300px;
+        margin-top: 15px;
+    }
+    
+    .flex-wrap {
+        justify-content: space-between;
+    }
+    
+    #OrderForm {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+    
+    .form {
+        margin-left: 250px;
+    }
+    
+    .Cart {
+        margin-top: 15px;
+        margin-left: 250px;
+    }
+    
+    .row {}

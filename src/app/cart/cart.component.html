@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="Cart">
+            <div class="cart-item" *ngFor="let item of items">
+                <div class="card " style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="card-img-top" src="{{item.img}}" alt="Card image cap" height="150px" width="10px">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex">
+                                <h5 class="card-title"><span>{{ item.name }} </span></h5>
+                                <span class="CartPrice"> Price: {{ item.price }} §  </span>
+                            </div>
+
+                            <div class="CartDescription">
+
+                                <span class="CartDescription">{{ item.description }} </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="Sum p-3">
+            <h4>Summary</h4>
+            <hr>
+            <h6>Products: {{total}} $ </h6>
+            <h6>Service: {{ total1}} $</h6>
+            <h6>Discount: {{total3}} $</h6>
+            <hr>
+            <h5>Total amount <br>(including VAT) {{ total2}} $ </h5>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<form class="form">
+    <div class="mb-3 ">
+        <h1 id="OrderForm">Order Form</h1>
+        <p>please fill up the into for the delivery </p>
+        <hr>
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Adress</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+        <button type="submit" class="btn btn-primary mt-3">Purchase</button>
+    </div>
+
+
+</form>

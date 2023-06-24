@@ -1,0 +1,32 @@
+<p class="OurSpecialities">Our specialties</p>
+<hr>
+<span class="border-bottom color-primary"></span>
+<div class="row row-cols-xl-3 row-cols-l-2 row-cols-md-2 row-cols-s-2 row-cols-xs-1  ">
+
+    <div *ngFor="let dish of dishes ; index as i">
+
+        <div class=" card p-3 m-3" style="width: 18rem;" style="height: 28rem;">
+            <img class="card-img-top" src="{{dish.img}}" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+
+
+                <h3>
+                    <a>
+                        {{ dish.name }}
+                    </a>
+
+                </h3>
+                <p>
+                    Description:{{dish.description}}
+                </p>
+                <hr>
+                <h3>
+                    <p *ngIf="dish.available==false"> not available</p>
+                </h3>
+
+                <a *ngIf="dish.available==true" routerLink="/details/{{i}}" class="btn btn-primary">Details </a>
+                <button *ngIf=" dish.available==true" class="btn btn-success" (click)="addToCart(i)">Order</button>
+            </div>
+        </div>
+
+    </div>

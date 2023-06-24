@@ -1,0 +1,27 @@
+<h1>Dishes details</h1>
+<div style="display: flex;">
+
+    <div class=" card p-3 m-3" style="height: 45rem;">
+        <img class="card-img-top" src="{{details.img}}" alt="">
+        <div class="card-body">
+
+            <h3>
+                <a>
+                        {{ details.name }}
+                    </a>
+            </h3>
+            <p>
+                {{details.price}} $
+            </p>
+            <p>
+                Description:{{details.description}}
+            </p>
+
+
+
+            <button class=" btn btn-success" (click)="addToCart() ">Order</button>
+        </div>
+
+    </div>
+
+</div>

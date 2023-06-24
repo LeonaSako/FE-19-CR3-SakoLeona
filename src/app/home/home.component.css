@@ -1,0 +1,42 @@
+        .bg-image {
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/14/11/43/restaurant-939434_640.jpg');
+            background-size: 100%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            padding-top: 170px;
+        }
+        
+        #h1 {
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+        }
+        
+        #p {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        #ristorante {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30ox;
+        }
+        
+        .middle {
+            padding-left: 70px;
+            padding-right: 150px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        #h4 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+        }
+        
+        .display {
+            margin-top: 20px;
+        }
